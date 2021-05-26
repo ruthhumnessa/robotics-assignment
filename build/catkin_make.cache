@@ -1,0 +1,2 @@
+my_pkg
+-DCATKIN_DEVEL_PREFIX=/home/tnsu/q1/devel -DCMAKE_INSTALL_PREFIX=/home/tnsu/q1/install -G Unix Makefiles
