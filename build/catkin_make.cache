@@ -1,0 +1,2 @@
+arm_description:arm_gazebo
+-DCATKIN_DEVEL_PREFIX=/home/natnael/question_four/devel -DCMAKE_INSTALL_PREFIX=/home/natnael/question_four/install -G Unix Makefiles

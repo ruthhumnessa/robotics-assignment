@@ -1,0 +1,8 @@
+prefix=/home/natnael/question_four/devel
+
+Name: arm_gazebo
+Description: Description of arm_gazebo
+Version: 0.0.0
+Cflags: -I/home/natnael/question_four/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp gazebo_ros message_runtime
