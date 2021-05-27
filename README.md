@@ -1,2 +1,5 @@
 # robotics-assignment
-This is a repository for the Robotics lab class, Assignment -1
+
+Question: 3
+Create a ROS node in Gazebo Plugin, where the Gazebo plugin continuously publishes
+the current angles of the four joints of the above model.
