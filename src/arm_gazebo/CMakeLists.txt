@@ -9,6 +9,7 @@ project(arm_gazebo)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   gazebo_ros
+  arm_lib
   roscpp
   rospy
   std_msgs
@@ -23,7 +24,9 @@ include_directories(${Boost_INCLUDE_DIR}
               ${std_msgs_INCLUDE_DIRS})
               
 add_library(arm_model_plugin SHARED src/controller.cpp) 
+add_library(gripper_controller SHARED src/gripper_controller.cpp)
 target_link_libraries(arm_model_plugin ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES} ${roscpp_LIBRARIES})
+target_link_libraries(gripper_controller ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES} ${roscpp_LIBRARIES})
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
